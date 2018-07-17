@@ -1,6 +1,16 @@
+From: Gustavo Noronha Silva <kov@debian.org>
+Date: Tue, 17 Jul 2018 16:56:50 +0300
+Subject: _makefile_spaces
+
+---
+ Makefile.am | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/Makefile.am b/Makefile.am
+index b700287..4736f61 100644
 --- a/Makefile.am
 +++ b/Makefile.am
-@@ -17,11 +17,11 @@
+@@ -17,11 +17,11 @@ EXTRA_DIST = config.rpath mkinstalldirs intltool-extract.in intltool-merge.in in
  
  if GCONF_SCHEMAS_INSTALL
  install-data-local:

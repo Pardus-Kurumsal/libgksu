@@ -1,6 +1,16 @@
+From: Gustavo Noronha Silva <kov@debian.org>
+Date: Tue, 17 Jul 2018 16:56:51 +0300
+Subject: _sudo_keep_env
+
+---
+ libgksu/libgksu.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/libgksu/libgksu.c b/libgksu/libgksu.c
+index ce477d4..cb7c2f1 100644
 --- a/libgksu/libgksu.c
 +++ b/libgksu/libgksu.c
-@@ -2704,6 +2704,12 @@
+@@ -2589,6 +2589,12 @@ gksu_sudo_fuller (GksuContext *context,
        cmd[argcount] = g_strdup("-H");
        argcount++;
      }

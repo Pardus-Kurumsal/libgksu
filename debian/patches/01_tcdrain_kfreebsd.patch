@@ -1,6 +1,16 @@
---- libgksu-2.0.12/libgksu/libgksu.c.orig	2010-11-21 11:18:53.779616632 +0100
-+++ libgksu-2.0.12/libgksu/libgksu.c	2010-11-21 11:19:19.104115618 +0100
-@@ -2202,7 +2202,9 @@
+From: Gustavo Noronha Silva <kov@debian.org>
+Date: Tue, 17 Jul 2018 16:56:50 +0300
+Subject: _tcdrain_kfreebsd
+
+---
+ libgksu/libgksu.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/libgksu/libgksu.c b/libgksu/libgksu.c
+index a764ac2..9a0478f 100644
+--- a/libgksu/libgksu.c
++++ b/libgksu/libgksu.c
+@@ -2202,7 +2202,9 @@ gksu_su_fuller (GksuContext *context,
  	      write (fdpty, line, strlen(line));
  	      g_free (line);
  

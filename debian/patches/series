@@ -12,4 +12,5 @@
 24_cross.patch
 27_sudo_wrong_pwd_check.patch
 29_check_newline.patch
+30_add_turkish_translation.patch
 99_intltool.patch

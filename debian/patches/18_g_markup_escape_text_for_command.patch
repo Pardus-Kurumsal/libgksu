@@ -1,7 +1,17 @@
+From: Gustavo Noronha Silva <kov@debian.org>
+Date: Tue, 17 Jul 2018 16:56:51 +0300
+Subject: _g_markup_escape_text_for_command
+
 === modified file 'libgksu/libgksu.c'
+---
+ libgksu/libgksu.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/libgksu/libgksu.c b/libgksu/libgksu.c
+index 68c1d05..ce477d4 100644
 --- a/libgksu/libgksu.c
 +++ b/libgksu/libgksu.c
-@@ -994,12 +994,12 @@
+@@ -879,12 +879,12 @@ su_ask_password (GksuContext *context, gchar *prompt,
  				     "The application '%s' lets you "
  				     "modify essential parts of your "
  				     "system."),
