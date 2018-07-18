@@ -1,0 +1,438 @@
+# translation of libgksu to Turkish
+# Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libgksu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-17 13:48+0300\n"
+"PO-Revision-Date: 2018-07-18 09:51+0300\n"
+"Last-Translator: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>\n"
+"Language-Team: Türkçe <>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#: ../libgksu/libgksu.c:126
+#, c-format
+msgid "Not using locking for read only lock file %s"
+msgstr "%s salt okunur kilit dosyası için kilitleme kullanılmıyor"
+
+#: ../libgksu/libgksu.c:146
+#, c-format
+msgid "Not using locking for nfs mounted lock file %s"
+msgstr "Nfs bağlanmış %s dosyası için kilitleme kullanılmıyor"
+
+#: ../libgksu/libgksu.c:502
+msgid ""
+"<b><big>Could not grab your mouse.</big></b>\n"
+"\n"
+"A malicious client may be eavesdropping on your session or you may have just "
+"clicked a menu or some application just decided to get focus.\n"
+"\n"
+"Try again."
+msgstr ""
+"<big><b>Fareniz yakalanamadı.</b></big>\n"
+"\n"
+"Zararlı bir istemci oturumunuzu üzerinde dinleme yapıyor olabilir veya bir "
+"menü ya da uygulamaya tıkladınız ve o da odağı almaya karar verdi.\n"
+"\n"
+"Tekrar deneyin."
+
+#: ../libgksu/libgksu.c:514
+msgid ""
+"<b><big>Could not grab your keyboard.</big></b>\n"
+"\n"
+"A malicious client may be eavesdropping on your session or you may have just "
+"clicked a menu or some application just decided to get focus.\n"
+"\n"
+"Try again."
+msgstr ""
+"<big><b>Klavyeniz yakalanamadı.</b></big>\n"
+"\n"
+"Zararlı bir istemci oturumunuzu üzerinde dinleme yapıyor olabilir veya bir "
+"menü ya da uygulamaya tıkladınız ve o da odağı almaya karar verdi.\n"
+"\n"
+"Tekrar deneyin."
+
+#: ../libgksu/libgksu.c:877
+#, c-format
+msgid ""
+"<b><big>Enter your password to perform administrative tasks</big></b>\n"
+"\n"
+"The application '%s' lets you modify essential parts of your system."
+msgstr ""
+"<b><big>Yönetici uygulamaları için parolanızı girin</big></b>\n"
+"\n"
+"'%s' uygulaması, sisteminizin temel bölümlerinde değişiklik yapmanızı sağlar."
+
+#: ../libgksu/libgksu.c:884
+#, c-format
+msgid ""
+"<b><big>Enter your password to run the application '%s' as user %s</big></b>"
+msgstr ""
+"<b><big>'%s' uygulamasını, %s kullanıcısı olarak çalıştırmak için parolanızı "
+"girin</big></b>"
+
+#: ../libgksu/libgksu.c:892
+#, c-format
+msgid ""
+"<b><big>Enter the administrative password</big></b>\n"
+"\n"
+"The application '%s' lets you modify essential parts of your system."
+msgstr ""
+"<b><big>Yönetici şifresini giriniz</big></b>\n"
+"\n"
+"'%s' uygulaması, size sisteminizin temel bölümlerinde değişiklik yapmayı "
+"sağlar."
+
+#: ../libgksu/libgksu.c:899
+#, c-format
+msgid "<b><big>Enter the password of %s to run the application '%s'</big></b>"
+msgstr ""
+"<b><big>'%1$s' uygulamasını çalıştırmak için %2$s kullanıcısının parolasını "
+"girin</big></b>"
+
+#: ../libgksu/libgksu.c:930
+#, c-format
+msgid "Password prompt canceled."
+msgstr "Parola istemi iptal edildi."
+
+#: ../libgksu/libgksu.c:1002
+#, c-format
+msgid ""
+"<b><big>Granted permissions without asking for password</big></b>\n"
+"\n"
+"The '%s' program was started with the privileges of the %s user without the "
+"need to ask for a password, due to your system's authentication mechanism "
+"setup.\n"
+"\n"
+"It is possible that you are being allowed to run specific programs as user "
+"%s without the need for a password, or that the password is cached.\n"
+"\n"
+"This is not a problem report; it's simply a notification to make sure you "
+"are aware of this."
+msgstr ""
+"<b><big>İzinler, parola sorulmadan elde edildi</big></b>\n"
+"\n"
+"'%s' uygulaması, %s kullanıcısının yetkileriyle, sisteminizin doğrulama "
+"düzeneği ayarları nedeniyle parola sorma ihtiyacı hissedilmeden başlatıldı.\n"
+"\n"
+"Belirli bir uygulamayı %s kullanıcısı olarak, parola ihtiyacı olmadan ya da "
+"bellekteki parolayla başlatmanız mümkündür.\n"
+"\n"
+"Bu bir sorun raporu değil, durumun farkında olduğunuzdan emin olmak için "
+"gösterilen basit bir bildirimdir."
+
+#: ../libgksu/libgksu.c:1026
+msgid "Do _not display this message again"
+msgstr "Bu iletiyi bir daha _gösterme"
+
+#: ../libgksu/libgksu.c:1046
+msgid ""
+"<b>Would you like your screen to be \"grabbed\"\n"
+"while you enter the password?</b>\n"
+"\n"
+"This means all applications will be paused to avoid\n"
+"the eavesdropping of your password by a a malicious\n"
+"application while you type it."
+msgstr ""
+"<b>Ekranınızın, siz parolanızı girerken\n"
+"\"tutulmasını\" ister misiniz?</b>\n"
+"\n"
+"Bu, kötü niyetli uygulamaların gizlice parolanızı görmelerine\n"
+"engel olmak amacıyla, siz parolanızı girerken tüm uygulamaların\n"
+"duraklatılacağı anlamına gelir."
+
+#: ../libgksu/libgksu.c:1323
+msgid "Granting Rights"
+msgstr "Bahsetme Hakkı"
+
+#: ../libgksu/libgksu.c:1951
+#, c-format
+msgid "gksu_run needs a command to be run, none was provided."
+msgstr ""
+"gksu_run'ın çalıştıracağı komutun belirtimesi gerekiyor fakat belirtilmemiş."
+
+#: ../libgksu/libgksu.c:1962
+#, c-format
+msgid "The gksu-run-helper command was not found or is not executable."
+msgstr "gksu-run-helper komutu bulunamadı ya da çalıştırılabilir değil."
+
+#: ../libgksu/libgksu.c:1970 ../libgksu/libgksu.c:2544
+#, c-format
+msgid "Unable to copy the user's Xauthorization file."
+msgstr "Kullanıcının Xauthorization dosyası kopyalanamıyor."
+
+#: ../libgksu/libgksu.c:2018 ../libgksu/libgksu.c:2708
+#, c-format
+msgid "Failed to fork new process: %s"
+msgstr "Yeni işleç oluşturulamadı: %s"
+
+#: ../libgksu/libgksu.c:2167
+#, c-format
+msgid "Wrong password got from keyring."
+msgstr "Anahtarlıktan yanlış parola alındı."
+
+#: ../libgksu/libgksu.c:2171 ../libgksu/libgksu.c:2879
+#, c-format
+msgid "Wrong password."
+msgstr "Hatalı parola"
+
+#: ../libgksu/libgksu.c:2226 ../libgksu/libgksu.c:2240
+#, c-format
+msgid ""
+"Failed to communicate with gksu-run-helper.\n"
+"\n"
+"Received:\n"
+" %s\n"
+"While expecting:\n"
+" %s"
+msgstr ""
+"gksu-run-helper ile haberleşme başarısız oldu.\n"
+"\n"
+"Şu beklenirken:\n"
+" %2$s\n"
+"Şu alındı:\n"
+" %1$s"
+
+#: ../libgksu/libgksu.c:2232
+#, c-format
+msgid ""
+"Failed to communicate with gksu-run-helper.\n"
+"\n"
+"Received bad string while expecting:\n"
+" %s"
+msgstr ""
+"gksu-run-helper ile iletişim başarısız oldu.\n"
+"\n"
+"Şu beklenirken bozuk dizgi alındı:\n"
+" %s"
+
+#: ../libgksu/libgksu.c:2341
+#, c-format
+msgid "su terminated with %d status"
+msgstr "su %d durumu ile sonlandı"
+
+#: ../libgksu/libgksu.c:2512
+#, c-format
+msgid "gksu_sudo_run needs a command to be run, none was provided."
+msgstr ""
+"gksu_sudo_run'ın çalıştıracağı komutun belirtilmesi gerekiyor fakat "
+"belirtilmemiş."
+
+#: ../libgksu/libgksu.c:2668 ../libgksu/libgksu.c:2676
+#, c-format
+msgid "Error creating pipe: %s"
+msgstr "Boru oluşturulurken hata oluştu: %s"
+
+#: ../libgksu/libgksu.c:2700
+#, c-format
+msgid "Failed to exec new process: %s"
+msgstr "Yeni işlem çalıştırılamadı: %s"
+
+#: ../libgksu/libgksu.c:2731 ../libgksu/libgksu.c:2741
+#, c-format
+msgid "Error opening pipe: %s"
+msgstr "Boru açılırken hata oluştu: %s"
+
+#: ../libgksu/libgksu.c:2809
+msgid "Password: "
+msgstr "Parola: "
+
+#: ../libgksu/libgksu.c:2891 ../libgksu/libgksu.c:2955
+#, c-format
+msgid ""
+"The underlying authorization mechanism (sudo) does not allow you to run this "
+"program. Contact the system administrator."
+msgstr ""
+"Arkaplanda çalışan doğrulama düzeneği (sudo), bu uygulamayı çalıştırmanıza "
+"izin vermiyor. Sistem yöneticinizle iletişim kurun."
+
+#: ../libgksu/libgksu.c:2975
+#, c-format
+msgid "sudo terminated with %d status"
+msgstr ""
+"sudo %d durumu ile sonlandı\n"
+"\t"
+
+#: ../libgksuui/gksuui-dialog.c:149
+msgid "<b>You have capslock on</b>"
+msgstr "<b>Caps Lock tuşunuz açık durumda</b>"
+
+#: ../libgksuui/gksuui-dialog.c:219
+msgid "Remember password"
+msgstr "Parolayı anımsa"
+
+#: ../libgksuui/gksuui-dialog.c:236
+msgid "Save for this session"
+msgstr "Bu oturum için kaydet"
+
+#: ../libgksuui/gksuui-dialog.c:241
+msgid "Save in the keyring"
+msgstr "Anahtarlığa kaydet"
+
+#. label
+#: ../libgksuui/gksuui-dialog.c:335
+msgid "<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
+msgstr "<span weight=\"bold\" size=\"larger\">Root parolasını yazın.</span>\n"
+
+#. entry label
+#: ../libgksuui/gksuui-dialog.c:356
+msgid "Password:"
+msgstr "Parola:"
+
+#: ../gksu-properties/gksu-properties.c:259
+msgid "Failed to load gtkui file; please check your installation."
+msgstr "gtkui dosyası yüklenemedi; lütfen kurulumunuzu kontrol edin."
+
+#: ../gksu-properties/gksu-properties.desktop.in.h:1
+msgid "Privilege granting"
+msgstr "Ayrıcalık tahsisi"
+
+#: ../gksu-properties/gksu-properties.desktop.in.h:2
+msgid "Configure behavior of the privilege-granting tool"
+msgstr "Ayrıcalık-tahsis aracının davranışını yapılandırın"
+
+#: ../gksu-properties/gksu-properties.ui.h:1
+msgid "enable"
+msgstr "etkinleştir"
+
+#: ../gksu-properties/gksu-properties.ui.h:2
+msgid "disable"
+msgstr "devre dışı bırak"
+
+#: ../gksu-properties/gksu-properties.ui.h:3
+msgid "force enable"
+msgstr "zorla etkinleştir"
+
+#: ../gksu-properties/gksu-properties.ui.h:4
+msgid "prompt"
+msgstr "istem"
+
+#: ../gksu-properties/gksu-properties.ui.h:5
+msgid "su"
+msgstr "su"
+
+#: ../gksu-properties/gksu-properties.ui.h:6
+msgid "sudo"
+msgstr "sudo"
+
+#: ../gksu-properties/gksu-properties.ui.h:7
+msgid "_Authentication mode:"
+msgstr "_Doğrulama kipi:"
+
+#: ../gksu-properties/gksu-properties.ui.h:8
+msgid "_Grab mode:"
+msgstr "_Tutma kipi:"
+
+#: ../gksu-properties/gksu-properties.ui.h:9
+msgid "<b>Screen Grabbing</b>"
+msgstr "<b>Ekran Tutma</b>"
+
+#: ../gksu-properties/gksu-properties.ui.h:10
+msgid "<b>Behavior</b>"
+msgstr "<b>Davranış</b>"
+
+#: ../gksu.schemas.in.h:1
+msgid "Disable keyboard and mouse grab"
+msgstr "Klavye ve fare tutucuyu devre dışı bırak"
+
+#: ../gksu.schemas.in.h:2
+msgid ""
+"Whether the keyboard and mouse grabbing should be turned off. This will make "
+"it possible for other X applications to listen to keyboard input events, "
+"thus making it not possible to shield from malicious applications which may "
+"be running."
+msgstr ""
+"Klavye ve fare tutulmasının kapatılıp kapatılmayacağı. Bu diğer X "
+"uygulamalarının klavye giriş olaylarını dinlemelerini sağlar, ancak aynı "
+"zamanda çalışmakta olabilecek kötü niyetli uygulamalara karşı korunmayı da "
+"imkansız kılar."
+
+#: ../gksu.schemas.in.h:3
+msgid "Force keyboard and mouse grab"
+msgstr "Klavye ve fare tutmaya zorla"
+
+#: ../gksu.schemas.in.h:4
+msgid ""
+"Grab keyboard and mouse even if -g has been passed as argument on the "
+"command line."
+msgstr "Komut satırında -g argümanı olsa bile klavye ve fareyi yakala."
+
+#: ../gksu.schemas.in.h:5
+msgid "Sudo mode"
+msgstr "Sudo kipi"
+
+#: ../gksu.schemas.in.h:6
+msgid ""
+"Whether sudo should be the default backend method. This method is otherwise "
+"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
+msgstr ""
+"Sudo varsayılan yetki tahsis metodu olarak kullanılsın mı? Seçili "
+"olmadığında sudo metodunu kullanmak için -S parametresini kullanmalı veya "
+"'gksu' yerine 'gksudo'yu çalıştırmalısınız."
+
+#: ../gksu.schemas.in.h:7
+msgid "Prompt for grabbing"
+msgstr "Yakalama için komut iste"
+
+#: ../gksu.schemas.in.h:8
+msgid ""
+"This option will make gksu prompt the user if he wants to have the screen "
+"grabbed before entering the password. Notice that this only has an effect if "
+"force-grab is disabled."
+msgstr ""
+"Bu seçenek gksu'nun, kullanıcının parola girmeden önce ekranın tutulmasını "
+"isteyip istemediğini sormasını sağlar. Bu seçenek ancak \"tutmaya zorla\" "
+"devredışı ise etki edecektir."
+
+#: ../gksu.schemas.in.h:9
+msgid "Display information message when no password is needed"
+msgstr "Parola gerekmediğinde bilgi mesajı görüntüle"
+
+#: ../gksu.schemas.in.h:10
+msgid ""
+"This option determines whether a message dialog will be displayed informing "
+"the user that the program is being run without the need of a password being "
+"asked for some reason."
+msgstr ""
+"Bu seçenek, programın herhangi bir nedenle parola sormaya ihtiyaç "
+"duymaksızın çalıştırıldığını kullanıcıya belirten bir mesaj penceresi "
+"gösterilip gösterilmeyeceğini ayarlar"
+
+#: ../gksu.schemas.in.h:11
+msgid "Save password to gnome-keyring"
+msgstr "Parolayı gnome-keyring'e kaydet"
+
+#: ../gksu.schemas.in.h:12
+msgid ""
+"gksu can save the password you type to the gnome-keyring so you'll not be "
+"asked everytime"
+msgstr ""
+"gksu, her seferinde size sormamak için yazdığınız parolayı gnome-keyring "
+"içine kaydedebilir."
+
+#: ../gksu.schemas.in.h:13
+msgid "Keyring to which passwords will be saved"
+msgstr "Parolaların saklanacağı anahtarlık"
+
+#: ../gksu.schemas.in.h:14
+msgid ""
+"The name of the keyring gksu should use. Usual values are \"session\", which "
+"saves the password for the session, and \"default\", which saves the "
+"password with no timeout."
+msgstr ""
+"gksu tarafından kullanılacak olan anahtarlığın adı. Genelde kullanılan "
+"değerler, parolayı oturum için kaydeden \"oturum\", ve parolayı zaman aşımı "
+"olmaksızın kaydeden \"öntanımlı\" değerleridir."
+
+#: ../libgksu/gksu-run-helper.c:167
+#, c-format
+msgid "Failed to obtain xauth key: xauth binary not found at usual locations"
+msgstr ""
+"xauth anahtarı elde edilemedi: xauth ikili dosyası olağan konumlarında "
+"bulunamadı"
