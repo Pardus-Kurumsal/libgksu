@@ -1,7 +1,17 @@
+From: Gustavo Noronha Silva <kov@debian.org>
+Date: Tue, 17 Jul 2018 16:56:51 +0300
+Subject: _correct_colormap_get
+
 === modified file 'libgksu/libgksu.c'
+---
+ libgksu/libgksu.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/libgksu/libgksu.c b/libgksu/libgksu.c
+index cb7c2f1..44dce5e 100644
 --- a/libgksu/libgksu.c
 +++ b/libgksu/libgksu.c
-@@ -426,7 +426,7 @@
+@@ -426,7 +426,7 @@ fadeout_screen (GdkScreen *screen,
    attr.height = fadeout->area.height;
    attr.wclass = GDK_INPUT_OUTPUT;
    attr.visual = gdk_screen_get_system_visual (fadeout->screen);

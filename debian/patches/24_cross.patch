@@ -1,34 +1,18 @@
 From: Helmut Grohne <helmut@subdivi.de>
-Subject: fix cross compilation by using the cross tools discovered by configure
+Date: Tue, 17 Jul 2018 16:56:51 +0300
+Subject: fix cross compilation by using the cross tools discovered by
+ configure
 
-Index: libgksu-2.0.13~pre1/libgksuui/Makefile.am
-===================================================================
---- libgksu-2.0.13~pre1.orig/libgksuui/Makefile.am
-+++ libgksu-2.0.13~pre1/libgksuui/Makefile.am
-@@ -1,10 +1,10 @@
- AM_CFLAGS = -g -O2 -Wall
--INCLUDES = `pkg-config --cflags gtk+-2.0 gconf-2.0`
-+INCLUDES = `$(PKG_CONFIG) --cflags gtk+-2.0 gconf-2.0`
- AM_CPPFLAGS = -DLOCALEDIR=\"$(datadir)/locale\" -DDATA_DIR=\"$(datadir)\" -DPREFIX=\"$(prefix)\"
- 
- noinst_LTLIBRARIES = libgksuui1.0.la
- libgksuui1_0_la_SOURCES = gksuui-dialog.c
--libgksuui1_0_la_LDFLAGS = -Wl,-O1 `pkg-config --libs gtk+-2.0 gconf-2.0 x11`
-+libgksuui1_0_la_LDFLAGS = -Wl,-O1 `$(PKG_CONFIG) --libs gtk+-2.0 gconf-2.0 x11`
- 
- noinst_HEADERS = defines.h gksuui.h gksuui-dialog.h
- includedir = ${prefix}/include/$(PACKAGE)
-@@ -12,4 +12,4 @@
- noinst_PROGRAMS = test-gksuui
- test_gksuui_SOURCES = test-gksuui.c
- test_gksuui_LDADD = libgksuui1.0.la
--test_gksuui_LDFLAGS = `pkg-config --libs glib-2.0 x11`
-+test_gksuui_LDFLAGS = `$(PKG_CONFIG) --libs glib-2.0 x11`
-Index: libgksu-2.0.13~pre1/libgksu/Makefile.am
-===================================================================
---- libgksu-2.0.13~pre1.orig/libgksu/Makefile.am
-+++ libgksu-2.0.13~pre1/libgksu/Makefile.am
-@@ -28,12 +28,12 @@
+---
+ libgksu/Makefile.am   | 4 ++--
+ libgksuui/Makefile.am | 6 +++---
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/libgksu/Makefile.am b/libgksu/Makefile.am
+index 6377fa6..c181e9e 100644
+--- a/libgksu/Makefile.am
++++ b/libgksu/Makefile.am
+@@ -28,12 +28,12 @@ pkgconfig_DATA = libgksu2.pc
  
  pkglibdir = ${libdir}/${PACKAGE}
  pkglibexec_PROGRAMS = gksu-run-helper
@@ -43,3 +27,26 @@ Index: libgksu-2.0.13~pre1/libgksu/Makefile.am
 +test_gksu_LDFLAGS = `$(PKG_CONFIG) --libs glib-2.0 gtk+-2.0`
  
  EXTRA_DIST = libgksu.ver
+diff --git a/libgksuui/Makefile.am b/libgksuui/Makefile.am
+index d01c2c1..fb10bf4 100644
+--- a/libgksuui/Makefile.am
++++ b/libgksuui/Makefile.am
+@@ -1,10 +1,10 @@
+ AM_CFLAGS = -g -O2 -Wall
+-INCLUDES = `pkg-config --cflags gtk+-2.0 gconf-2.0`
++INCLUDES = `$(PKG_CONFIG) --cflags gtk+-2.0 gconf-2.0`
+ AM_CPPFLAGS = -DLOCALEDIR=\"$(datadir)/locale\" -DDATA_DIR=\"$(datadir)\" -DPREFIX=\"$(prefix)\"
+ 
+ noinst_LTLIBRARIES = libgksuui1.0.la
+ libgksuui1_0_la_SOURCES = gksuui-dialog.c
+-libgksuui1_0_la_LDFLAGS = -Wl,-O1 `pkg-config --libs gtk+-2.0 gconf-2.0 x11`
++libgksuui1_0_la_LDFLAGS = -Wl,-O1 `$(PKG_CONFIG) --libs gtk+-2.0 gconf-2.0 x11`
+ 
+ noinst_HEADERS = defines.h gksuui.h gksuui-dialog.h
+ includedir = ${prefix}/include/$(PACKAGE)
+@@ -12,4 +12,4 @@ includedir = ${prefix}/include/$(PACKAGE)
+ noinst_PROGRAMS = test-gksuui
+ test_gksuui_SOURCES = test-gksuui.c
+ test_gksuui_LDADD = libgksuui1.0.la
+-test_gksuui_LDFLAGS = `pkg-config --libs glib-2.0 x11`
++test_gksuui_LDFLAGS = `$(PKG_CONFIG) --libs glib-2.0 x11`

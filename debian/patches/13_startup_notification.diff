@@ -1,6 +1,16 @@
+From: Gustavo Noronha Silva <kov@debian.org>
+Date: Tue, 17 Jul 2018 16:56:51 +0300
+Subject: _startup_notification
+
+---
+ libgksu/libgksu.c | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+diff --git a/libgksu/libgksu.c b/libgksu/libgksu.c
+index 3872273..efdfda1 100644
 --- a/libgksu/libgksu.c
 +++ b/libgksu/libgksu.c
-@@ -1789,7 +1789,17 @@
+@@ -1725,7 +1725,17 @@ static void
  gksu_context_launch_initiate (GksuContext *context)
  {
    gchar *sid = NULL;

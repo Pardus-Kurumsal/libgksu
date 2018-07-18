@@ -1,9 +1,16 @@
-From: Hideki Yamane (Debian-JP) <henrich@debian.or.jp>
+From: "Hideki Yamane (Debian-JP)" <henrich@debian.or.jp>
+Date: Tue, 17 Jul 2018 16:56:50 +0300
 Subject: Enable Japanese translations
 
---- a/configure.ac	2014-09-06 21:57:31.815538838 +0200
-+++ b/configure.ac	2014-09-06 21:57:44.635393843 +0200
-@@ -44,7 +44,7 @@
+---
+ configure.ac | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configure.ac b/configure.ac
+index f3d3a4f..b89a71c 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -44,7 +44,7 @@ PKG_CHECK_MODULES(LIBGKSU, [gtk+-2.0 >= 2.4.0, gconf-2.0, libstartup-notificatio
  PKG_CHECK_MODULES(GKSU_PROPERTIES, [gtk+-2.0 >= 2.12, gconf-2.0])
  
  # Checks for library functions.

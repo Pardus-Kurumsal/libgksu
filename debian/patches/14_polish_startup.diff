@@ -1,7 +1,17 @@
+From: Gustavo Noronha Silva <kov@debian.org>
+Date: Tue, 17 Jul 2018 16:56:51 +0300
+Subject: _polish_startup
+
 === modified file 'libgksu/libgksu.c'
+---
+ libgksu/libgksu.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/libgksu/libgksu.c b/libgksu/libgksu.c
+index efdfda1..68c1d05 100644
 --- a/libgksu/libgksu.c
 +++ b/libgksu/libgksu.c
-@@ -1385,6 +1385,13 @@
+@@ -1321,6 +1321,13 @@ startup_notification_initialize (GksuContext *context)
  			       NULL, NULL);
    context->sn_context = sn_launcher_context_new (sn_display, gdk_screen_get_number (gdk_display_get_default_screen (gdk_display_get_default ())));
    sn_launcher_context_set_description (context->sn_context, _("Granting Rights"));

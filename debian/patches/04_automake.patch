@@ -1,25 +1,17 @@
-Description: Fix build failures with latest autotools
-Author: Balint Reczey <balint@balintreczey.hu>
---- a/libgksuui/Makefile.am
-+++ b/libgksuui/Makefile.am
-@@ -4,7 +4,7 @@
- 
- noinst_LTLIBRARIES = libgksuui1.0.la
- libgksuui1_0_la_SOURCES = gksuui-dialog.c
--libgksuui1_0_la_LDFLAGS = -Wl,-O1 `pkg-config --libs gtk+-2.0 gconf-2.0`
-+libgksuui1_0_la_LDFLAGS = -Wl,-O1 `pkg-config --libs gtk+-2.0 gconf-2.0 x11`
- 
- noinst_HEADERS = defines.h gksuui.h gksuui-dialog.h
- includedir = ${prefix}/include/$(PACKAGE)
-@@ -12,4 +12,4 @@
- noinst_PROGRAMS = test-gksuui
- test_gksuui_SOURCES = test-gksuui.c
- test_gksuui_LDADD = libgksuui1.0.la
--test_gksuui_LDFLAGS = `pkg-config --libs glib-2.0`
-+test_gksuui_LDFLAGS = `pkg-config --libs glib-2.0 x11`
+From: Gustavo Noronha Silva <kov@debian.org>
+Date: Tue, 17 Jul 2018 16:56:50 +0300
+Subject: _automake
+
+---
+ libgksu/Makefile.am   | 4 ++--
+ libgksuui/Makefile.am | 4 ++--
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/libgksu/Makefile.am b/libgksu/Makefile.am
+index 3fafe1a..6377fa6 100644
 --- a/libgksu/Makefile.am
 +++ b/libgksu/Makefile.am
-@@ -27,13 +27,13 @@
+@@ -27,13 +27,13 @@ pkgconfigdir = ${libdir}/pkgconfig
  pkgconfig_DATA = libgksu2.pc
  
  pkglibdir = ${libdir}/${PACKAGE}
@@ -35,3 +27,22 @@ Author: Balint Reczey <balint@balintreczey.hu>
 +test_gksu_LDFLAGS = `pkg-config --libs glib-2.0 gtk+-2.0`
  
  EXTRA_DIST = libgksu.ver
+diff --git a/libgksuui/Makefile.am b/libgksuui/Makefile.am
+index 567db0c..d01c2c1 100644
+--- a/libgksuui/Makefile.am
++++ b/libgksuui/Makefile.am
+@@ -4,7 +4,7 @@ AM_CPPFLAGS = -DLOCALEDIR=\"$(datadir)/locale\" -DDATA_DIR=\"$(datadir)\" -DPREF
+ 
+ noinst_LTLIBRARIES = libgksuui1.0.la
+ libgksuui1_0_la_SOURCES = gksuui-dialog.c
+-libgksuui1_0_la_LDFLAGS = -Wl,-O1 `pkg-config --libs gtk+-2.0 gconf-2.0`
++libgksuui1_0_la_LDFLAGS = -Wl,-O1 `pkg-config --libs gtk+-2.0 gconf-2.0 x11`
+ 
+ noinst_HEADERS = defines.h gksuui.h gksuui-dialog.h
+ includedir = ${prefix}/include/$(PACKAGE)
+@@ -12,4 +12,4 @@ includedir = ${prefix}/include/$(PACKAGE)
+ noinst_PROGRAMS = test-gksuui
+ test_gksuui_SOURCES = test-gksuui.c
+ test_gksuui_LDADD = libgksuui1.0.la
+-test_gksuui_LDFLAGS = `pkg-config --libs glib-2.0`
++test_gksuui_LDFLAGS = `pkg-config --libs glib-2.0 x11`

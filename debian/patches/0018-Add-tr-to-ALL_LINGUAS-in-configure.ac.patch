@@ -1,0 +1,26 @@
+From: =?utf-8?q?Yunusemre_=C5=9Eent=C3=BCrk?=
+ <yunusemre.senturk@pardus.org.tr>
+Date: Wed, 18 Jul 2018 10:40:10 +0300
+Subject: Add tr to ALL_LINGUAS in configure.ac
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
+---
+ configure.ac | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configure.ac b/configure.ac
+index b89a71c..404e312 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -44,7 +44,7 @@ PKG_CHECK_MODULES(LIBGKSU, [gtk+-2.0 >= 2.4.0, gconf-2.0, libstartup-notificatio
+ PKG_CHECK_MODULES(GKSU_PROPERTIES, [gtk+-2.0 >= 2.12, gconf-2.0])
+ 
+ # Checks for library functions.
+-ALL_LINGUAS="ca cs da de es eu fr hu it ja ko lt pl pt_BR ro ru sk sv nb nl th zh_CN"
++ALL_LINGUAS="ca cs da de es eu fr hu it ja ko lt pl pt_BR ro ru sk sv nb nl th tr zh_CN"
+ 
+ AC_DEFINE(GETTEXT_PACKAGE, AC_PACKAGE_NAME, [gettext package])
+ GETTEXT_PACKAGE=AC_PACKAGE_NAME
